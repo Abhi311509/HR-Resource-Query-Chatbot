@@ -18,9 +18,9 @@ A Retrieval-Augmented Generation (RAG) system built using LangChain, FAISS, LLaM
 
 7. Local model + embedding
 
-#Architecture Overview
+# Architecture Overview
 
-##graph TD
+## graph TD
     User[👤 User (Client)]
     Streamlit[🖥️ Streamlit Frontend]
     FastAPI[⚙️ FastAPI Backend API]
@@ -49,7 +49,7 @@ A Retrieval-Augmented Generation (RAG) system built using LangChain, FAISS, LLaM
 
     Streamlit Frontend displays final answer to the User
 
-#Setup & Installation
+# Setup & Installation
 
 1️⃣ Clone the repo
 
@@ -80,7 +80,7 @@ Open http://127.0.0.1:8000/docs
     streamlit run frontend/app.py
 
 
-#Now test your workflow :
+# Now test your workflow :
 
    - Go to your Streamlit app (localhost:8501)
 
@@ -94,7 +94,7 @@ Open http://127.0.0.1:8000/docs
     - Final LLaMA-generated paragraph recommendation
 
 
-#API Documentation
+# API Documentation
 
 - POST /chat
 
@@ -137,7 +137,7 @@ Open http://127.0.0.1:8000/docs
               }
  
 
-#AI Development Process
+# AI Development Process
 
 - Created a synthetic realistic employee dataset.
 
@@ -155,7 +155,7 @@ Open http://127.0.0.1:8000/docs
 
 - Validated response quality and system performance.
 
-#AI Tools Used:
+# AI Tools Used:
 
     ChatGPT (GPT-4o) via OpenAI for:
 
@@ -167,20 +167,20 @@ Open http://127.0.0.1:8000/docs
 
        - Architecture design suggestions for the backend and retrieval chain setup
 
-#AI vs Handwritten Code Split
+# AI vs Handwritten Code Split
 
    - 70% AI-assisted code — Code snippets, module integrations, and debugging solutions suggested via ChatGPT.
 
    - 30% hand-written code — Final adjustments, JSON data management, Streamlit UI structuring, and error handling logic written manually after integrating AI-generated suggestions.
 
-#Interesting AI-Generated Optimizations
+# Interesting AI-Generated Optimizations
 
    - Suggested embedding normalization using faiss.normalize_L2() to ensure cosine similarity retrieval correctness.
 
    - Recommended separating GET /employees/search for lightweight similarity scoring without LLaMA inference.
 
 
-#Future Improvements:
+# Future Improvements:
 
     Model & Embedding Improvements
 
